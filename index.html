@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8" />
+<title>كروري فالفيردي</title>
+<style>
+  body {
+    background-color: red;
+    color: #3bff00;
+    font-family: Arial, sans-serif;
+    direction: rtl;
+    text-align: center;
+  }
+  .video-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  video {
+    width: 320px;
+    height: 180px;
+    background: black;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+
+<h2>كروري فالفيردي</h2>
+
+<div class="video-container" id="videoContainer">
+  <video controls preload="metadata" src="https://cdn.jsdelivr.net/gh/krwryfalfyrdy235/KRAR/VID_20250630_084613_614.mp4"></video>
+  <video controls preload="metadata" src="https://cdn.jsdelivr.net/gh/krwryfalfyrdy235/KRAR/1.mp4"></video>
+  <video controls preload="metadata" src="https://cdn.jsdelivr.net/gh/krwryfalfyrdy235/KRAR/2.mp4"></video>
+  <video controls preload="metadata" src="https://cdn.jsdelivr.net/gh/krwryfalfyrdy235/KRAR/3.mp4"></video>
+  <video controls preload="metadata" src="https://cdn.jsdelivr.net/gh/krwryfalfyrdy235/KRAR/4.mp4"></video>
+  <video controls preload="metadata" src="https://cdn.jsdelivr.net/gh/krwryfalfyrdy235/KRAR/5.mp4"></video>
+  <video controls preload="metadata" src="https://cdn.jsdelivr.net/gh/krwryfalfyrdy235/KRAR/6.mp4"></video>
+  <video controls preload="metadata" src="https://cdn.jsdelivr.net/gh/krwryfalfyrdy235/KRAR/7.mp4"></video>
+  <video controls preload="metadata" src="https://cdn.jsdelivr.net/gh/krwryfalfyrdy235/KRAR/8.mp4"></video>
+  <video controls preload="metadata" src="https://cdn.jsdelivr.net/gh/krwryfalfyrdy235/KRAR/9.mp4"></video>
+  <video controls preload="metadata" src="https://cdn.jsdelivr.net/gh/krwryfalfyrdy235/KRAR/10.mp4"></video>
+  <video controls preload="metadata" src="https://cdn.jsdelivr.net/gh/krwryfalfyrdy235/KRAR/11.mp4"></video>
+  <video controls preload="metadata" src="https://cdn.jsdelivr.net/gh/krwryfalfyrdy235/KRAR/12.mp4"></video>
+  <video controls preload="metadata" src="https://cdn.jsdelivr.net/gh/krwryfalfyrdy235/KRAR/13.mp4"></video>
+  <video controls preload="metadata" src="https://cdn.jsdelivr.net/gh/krwryfalfyrdy235/KRAR/14.mp4"></video>
+  <video controls preload="metadata" src="https://cdn.jsdelivr.net/gh/krwryfalfyrdy235/KRAR/15.mp4"></video>
+  <video controls preload="metadata" src="https://cdn.jsdelivr.net/gh/krwryfalfyrdy235/KRAR/16.mp4"></video>
+  <video controls preload="metadata" src="https://cdn.jsdelivr.net/gh/krwryfalfyrdy235/KRAR/17.mp4"></video>
+  <video controls preload="metadata" src="https://cdn.jsdelivr.net/gh/krwryfalfyrdy235/KRAR/18.mp4"></video>
+  <video controls preload="metadata" src="https://cdn.jsdelivr.net/gh/krwryfalfyrdy235/KRAR/19.mp4"></video>
+  <video controls preload="metadata" src="https://cdn.jsdelivr.net/gh/krwryfalfyrdy235/KRAR/20.mp4"></video>
+  <video controls preload="metadata" src="https://cdn.jsdelivr.net/gh/krwryfalfyrdy235/KRAR/21.mp4"></video>
+  <video controls preload="metadata" src="https://cdn.jsdelivr.net/gh/krwryfalfyrdy235/KRAR/22.mp4"></video>
+  <video controls preload="metadata" src="https://cdn.jsdelivr.net/gh/krwryfalfyrdy235/KRAR/23.mp4"></video>
+  <!-- استمر بإضافة بقية الفيديوهات بنفس الشكل -->
+</div>
+<script>
+  const videos = document.querySelectorAll('#videoContainer video');
+
+  videos.forEach(video => {
+    video.addEventListener('play', () => {
+      // عند تشغيل فيديو، أوقف كل الفيديوهات الأخرى
+      videos.forEach(otherVideo => {
+        if(otherVideo !== video) {
+          otherVideo.pause();
+        }
+      });
+    });
+  });
+</script>
+
+</body>
+</html>
